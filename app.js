@@ -13,7 +13,6 @@ function getWeather(){
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${enteredPlace}&appid=90d1c68a162258c86c84fcf0d3cc75fa`)
   .then(res => res.json())
   .then(data => {
-    console.log(data)
     foundPlace.innerText = data.name;
     temperature.innerText = data.main.temp;
     clouds.innerText = data.weather[0].description;

@@ -17,7 +17,7 @@ function getWeather(){
     temperature.innerText = data.main.temp;
     clouds.innerText = data.weather[0].description;
     let iconId = data.weather[0].icon;
-    let iconAttribute = `http://openweathermap.org/img/w/${iconId}.png`;
+    let iconAttribute = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
     weatherImg.setAttribute('src', iconAttribute);
     document.getElementById('entered-place').focus();
   })

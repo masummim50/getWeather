@@ -10,7 +10,7 @@ search.addEventListener('click', function(){
 
 function getWeather(){
   let enteredPlace = document.getElementById('entered-place').value;
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${enteredPlace}&appid=90d1c68a162258c86c84fcf0d3cc75fa`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${enteredPlace}&appid=90d1c68a162258c86c84fcf0d3cc75fa`)
   .then(res => res.json())
   .then(data => {
     console.log(data)
